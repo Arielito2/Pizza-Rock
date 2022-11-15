@@ -1,0 +1,275 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(/Menu/backMenu.jpg);
+    background-size: cover;
+}
+.titulosMenu{
+    padding: 30px 30px 10px 30px;
+    border-bottom: 5px rgb(255, 140, 0) solid;
+    margin: 0px 30px;
+}
+.titulosMenu p{
+    text-align: center;
+    font-size: 20px;
+}
+.titulosMenu h1{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 60px;
+    color: #141414;
+    font-weight: bold;
+}
+.conteinerList{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/* MUZZARELLA */
+.cartaMuzza{
+    margin-top: 20px;
+    border-radius: 5%;
+    background: url(/VariedadesPizza/RatonesMuzza.jpg) center;
+    background-size: cover;
+    width: 280px;
+    height: 300px;
+    display: flex;
+}
+.cartaMuzza .contenidoTex{
+    display: flex;
+    transition: .3s;
+    text-align: center;
+    flex-flow: column;
+    opacity: 0;
+    height: 300px;
+    padding: 10px;
+}
+.contenidoTex h1{
+    color: rgb(192, 0, 0);
+    padding-top: 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px black;
+}
+.contenidoTex p{
+    color: white;
+    font-family: 'Special Elite', cursive;
+    font-size: 20px;
+    padding-top: 30px;
+}
+.contenidoTex .valor{
+    color: orange;
+    align-self: flex-start;
+    align-items: flex-end;
+    padding-left: 12%;
+    font-weight: bold;
+    padding-top: 50px;
+}
+.contenidoTex:hover{
+    opacity: 1;
+}
+.cartaMuzza:hover{
+    border: 2px solid white;
+    box-shadow: 3px 3px 3px white;
+}
+
+/* FUGAZETA */
+.cartaFuga{
+    margin-top: 20px;
+    border-radius: 5%;
+    background: url(/VariedadesPizza/RedondosFugazeta.jpg) center;
+    background-size: cover;
+    width: 280px;
+    height: 300px;
+    display: flex;
+}
+.cartaFuga .contenidoTexFuga{
+    display: flex;
+    transition: .3s;
+    text-align: center;
+    flex-flow: column;
+    opacity: 0;
+    height: 300px;
+    padding: 10px;
+}
+.contenidoTexFuga h1{
+    color: rgb(192, 0, 0);
+    padding-top: 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px black;
+}
+.contenidoTexFuga p{
+    color: black;
+    font-weight: bold;
+    font-family: 'Special Elite', cursive;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.contenidoTexFuga .valorFuga{
+    color: orange;
+    align-self: flex-start;
+    align-items: flex-end;
+    padding-left: 12%;
+    font-weight: bold;
+    padding-top: 50px;
+}
+.contenidoTexFuga:hover{
+    opacity: 1;
+}
+.cartaFuga:hover{
+    border: 2px solid rgb(180, 5, 5);
+    box-shadow: 3px 3px 3px rgb(180, 5, 5);
+}
+/* Especial */
+.cartaEspecial{
+    margin-top: 20px;
+    border-radius: 5%;
+    background: url(/VariedadesPizza/EspecialRolling.jpg) center;
+    background-size: cover;
+    width: 280px;
+    height: 300px;
+    display: flex;
+}
+.cartaEspecial .contenidoTexEspecial{
+    display: flex;
+    transition: .3s;
+    text-align: center;
+    flex-flow: column;
+    opacity: 0;
+    height: 300px;
+    padding: 10px;
+}
+.contenidoTexEspecial h1{
+    color: rgb(192, 0, 0);
+    padding-top: 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px black;
+}
+.contenidoTexEspecial p{
+    color: #757575;
+    font-weight: bold;
+    font-family: 'Special Elite', cursive;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.contenidoTexEspecial .valorEspecial{
+    color: orange;
+    align-self: flex-start;
+    align-items: flex-end;
+    padding-left: 4%;
+    font-weight: bold;
+    padding-top: 50px;
+}
+.contenidoTexEspecial:hover{
+    opacity: 1;
+}
+.cartaEspecial:hover{
+    border: 2px solid rgb(152, 152, 152);
+    box-shadow: 3px 3px 3px rgb(152, 152, 152);
+}
+/* Napolitana */
+.cartaNapo{
+    margin-top: 20px;
+    border-radius: 5%;
+    background: url(/VariedadesPizza/Napolitana-picLogo.png) center;
+    background-size: cover;
+    width: 280px;
+    height: 300px;
+    display: flex;
+}
+.cartaNapo .contenidoTexNapo{
+    display: flex;
+    transition: .3s;
+    text-align: center;
+    flex-flow: column;
+    opacity: 0;
+    height: 300px;
+    padding: 10px;
+}
+.contenidoTexNapo h1{
+    color: rgb(192, 0, 0);
+    padding-top: 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px black;
+}
+.contenidoTexNapo p{
+    color: #757575;
+    font-weight: bold;
+    font-family: 'Special Elite', cursive;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.contenidoTexNapo .valorNapo{
+    color: orange;
+    align-self: flex-start;
+    align-items: flex-end;
+    padding-left: 4%;
+    font-weight: bold;
+    padding-top: 50px;
+}
+.contenidoTexNapo:hover{
+    opacity: 1;
+}
+.cartaNapo:hover{
+    border: 2px solid black;
+    box-shadow: 3px 3px 3px black;
+}
+/* Calabresa */
+.cartaCala{
+    margin-top: 20px;
+    border-radius: 5%;
+    background: url(/VariedadesPizza/Calabresa-pic.jpg) center;
+    background-size: cover;
+    width: 280px;
+    height: 300px;
+    display: flex;
+}
+.cartaCala .contenidoTexCala{
+    display: flex;
+    transition: .3s;
+    text-align: center;
+    flex-flow: column;
+    opacity: 0;
+    height: 300px;
+    padding: 10px;
+}
+.contenidoTexCala h1{
+    color: rgb(192, 0, 0);
+    padding-top: 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px black;
+}
+.contenidoTexCala p{
+    color: #757575;
+    font-weight: bold;
+    font-family: 'Special Elite', cursive;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.contenidoTexCala .valorCala{
+    color: orange;
+    align-self: flex-start;
+    align-items: flex-end;
+    padding-left: 4%;
+    font-weight: bold;
+    padding-top: 50px;
+}
+.contenidoTexCala:hover{
+    opacity: 1;
+}
+.cartaCala:hover{
+    border: 2px solid rgb(152, 152, 152);
+    box-shadow: 3px 3px 3px rgb(152, 152, 152);
+}
