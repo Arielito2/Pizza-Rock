@@ -4,24 +4,46 @@
     box-sizing: border-box;
 }
 body{
-    background: url(/Menu/backMenu.jpg);
+    background: url(/Menu/backMenu.jpg) fixed;
     background-size: cover;
 }
-.titulosMenu{
-    padding: 30px 30px 10px 30px;
+.titulosMenu .tittleBack{
+
     border-bottom: 5px rgb(255, 140, 0) solid;
-    margin: 0px 30px;
+    padding: 20px 0px;
+    margin: 0px 2px;
+    flex-flow: row;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.tittleBack #buttonBack{
+    background: transparent;
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    font-family: 'Caveat';
+    font-size: 25px;
+}
+#buttonBack a{
+    text-decoration: none;
 }
 .titulosMenu p{
+    font-size: 35px;
+    font-family: 'Caveat', cursive;
+    color: #ff2b2b;
+    -webkit-text-stroke: 1px black;
+    font-weight: 700;
     text-align: center;
-    font-size: 20px;
 }
-.titulosMenu h1{
-    font-family: 'Dancing Script', cursive;
-    text-align: center;
+.titulosMenu .tittleBack h1{
+    font-family: 'Lobster';
     font-size: 60px;
-    color: #141414;
-    font-weight: bold;
+    color: white;
+    font-weight: 500;
+    -webkit-text-stroke: 1px black;
+    letter-spacing: 10px;
+    text-align: center;
 }
 .conteinerList{
     display: flex;
@@ -57,7 +79,7 @@ body{
 }
 .contenidoTex p{
     color: white;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Lobster';
     font-size: 20px;
     padding-top: 30px;
 }
@@ -73,7 +95,7 @@ body{
     opacity: 1;
 }
 .cartaMuzza:hover{
-    border: 2px solid white;
+    border: 2px solid rgb(0, 0, 0);
     box-shadow: 3px 3px 3px white;
 }
 
@@ -103,11 +125,12 @@ body{
     font-size: 40px;
     font-weight: bolder;
     -webkit-text-stroke: 1px black;
+    letter-spacing: 5px;
 }
 .contenidoTexFuga p{
     color: black;
     font-weight: bold;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Lobster';
     font-size: 20px;
     padding-top: 10px;
 }
@@ -152,11 +175,12 @@ body{
     font-size: 40px;
     font-weight: bolder;
     -webkit-text-stroke: 1px black;
+    letter-spacing: 5px;
 }
 .contenidoTexEspecial p{
-    color: #757575;
+    color: #FFB74D;
     font-weight: bold;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Lobster';
     font-size: 20px;
     padding-top: 10px;
 }
@@ -172,14 +196,14 @@ body{
     opacity: 1;
 }
 .cartaEspecial:hover{
-    border: 2px solid rgb(152, 152, 152);
-    box-shadow: 3px 3px 3px rgb(152, 152, 152);
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 3px 3px 3px rgb(255, 29, 29);
 }
 /* Napolitana */
 .cartaNapo{
     margin-top: 20px;
     border-radius: 5%;
-    background: url(/VariedadesPizza/Napolitana-picLogo.png) center;
+    background: url(/VariedadesPizza/Napolitana-pic.jpg) center;
     background-size: cover;
     width: 280px;
     height: 300px;
@@ -203,9 +227,10 @@ body{
     -webkit-text-stroke: 1px black;
 }
 .contenidoTexNapo p{
-    color: #757575;
+    color: #FFB74D;
     font-weight: bold;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Lobster';
+    /* font-family: 'Special Elite', cursive; */
     font-size: 20px;
     padding-top: 10px;
 }
@@ -252,9 +277,9 @@ body{
     -webkit-text-stroke: 1px black;
 }
 .contenidoTexCala p{
-    color: #757575;
+    color: #FFB74D;
     font-weight: bold;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Lobster';
     font-size: 20px;
     padding-top: 10px;
 }
@@ -272,4 +297,153 @@ body{
 .cartaCala:hover{
     border: 2px solid rgb(152, 152, 152);
     box-shadow: 3px 3px 3px rgb(152, 152, 152);
+}
+/* Anana */
+.cartaAna{
+    margin-top: 20px;
+    border-radius: 5%;
+    background: url(/VariedadesPizza/Anana-picLogo.jpg) center;
+    background-size: cover;
+    width: 280px;
+    height: 300px;
+    display: flex;
+}
+.cartaAna .contenidoTexana{
+    display: flex;
+    transition: .3s;
+    text-align: center;
+    flex-flow: column;
+    opacity: 0;
+    height: 300px;
+    padding: 10px;
+}
+.contenidoTexana h1{
+    color: rgb(192, 0, 0);
+    padding-top: 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px black;
+}
+.contenidoTexana p{
+    color: #BF360C;
+    font-weight: bold;
+    font-family: 'Lobster';
+    font-size: 20px;
+    padding-top: 10px;
+}
+.contenidoTexana .valorAna{
+    color: orange;
+    align-self: flex-start;
+    align-items: flex-end;
+    padding-left: 4%;
+    font-weight: bold;
+    padding-top: 50px;
+}
+.contenidoTexana:hover{
+    opacity: 1;
+}
+.cartaAna:hover{
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 3px 3px 3px rgb(0, 0, 0);
+}
+/* Panceta y Huevo Frito */
+.cartaPan{
+    margin-top: 20px;
+    border-radius: 5%;
+    background: url(/VariedadesPizza/PancetayHuevo-Logo.jpg) center;
+    background-size: cover;
+    width: 280px;
+    height: 300px;
+    display: flex;
+}
+.cartaPan .contenidoTexPan{
+    display: flex;
+    transition: .3s;
+    text-align: center;
+    flex-flow: column;
+    opacity: 0;
+    height: 300px;
+    padding: 10px;
+}
+.contenidoTexPan h1{
+    letter-spacing: 8px;
+    color: rgb(192, 0, 0);
+    padding-top: 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px black;
+}
+.contenidoTexPan p{
+    color: white;
+    font-weight: bold;
+    font-family: 'Lobster';
+    font-size: 20px;
+    padding-top: 10px;
+}
+.contenidoTexPan .valorPan{
+    color: orange;
+    align-self: flex-start;
+    align-items: flex-end;
+    padding-left: 4%;
+    font-weight: bold;
+    padding-top: 50px;
+}
+.contenidoTexPan:hover{
+    opacity: 1;
+}
+.cartaPan:hover{
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 3px 3px 3px rgb(201, 201, 201);
+}
+/* Palmito */
+.cartaPal{
+    margin-top: 20px;
+    border-radius: 5%;
+    background: url(/VariedadesPizza/PescadorabiosoLogo.jpg) center;
+    background-size: cover;
+    width: 280px;
+    height: 300px;
+    display: flex;
+}
+.cartaPal .contenidoTexPal{
+    display: flex;
+    transition: .3s;
+    text-align: center;
+    flex-flow: column;
+    opacity: 0;
+    height: 300px;
+    padding: 10px;
+}
+.contenidoTexPal h1{
+    letter-spacing: 8px;
+    color: rgb(192, 0, 0);
+    padding-top: 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 32px;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px black;
+}
+.contenidoTexPal p{
+    color: white;
+    font-weight: bold;
+    font-family: 'Lobster';
+    font-size: 18px;
+    padding-top: 10px;
+}
+.contenidoTexPal .valorPal{
+    color: orange;
+    align-self: flex-start;
+    align-items: flex-end;
+    padding-left: 4%;
+    font-weight: bold;
+    padding-top: 50px;
+}
+.contenidoTexPal:hover{
+    opacity: 1;
+}
+.cartaPal:hover{
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 3px 3px 3px rgb(201, 201, 201);
 }
